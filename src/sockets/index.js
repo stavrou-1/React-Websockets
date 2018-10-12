@@ -8,7 +8,7 @@ const setupSocket = (dispatch, username) => {
     socket.send(JSON.stringify({
       type: types.ADD_USER,
       name: username
-    }))
+    }))//sockets
   }
   socket.onmessage = (event) => {
     const data = JSON.parse(event.data)
